@@ -15,6 +15,7 @@
  */
 package com.itis.android.firebasesimple.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -126,6 +127,11 @@ public class MainActivity extends AppCompatActivity implements
     private String username;
     private String photoUrl;
     private SharedPreferences sharedPreferences;
+
+    public static void start(Activity activity){
+        Intent intent = new Intent(activity,MainActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

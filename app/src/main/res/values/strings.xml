@@ -25,4 +25,10 @@
     <string name="error_pass">Enter password!</string>
     <string name="error_pass_length">Password too short, enter minimum 6 characters!</string>
     <string name="error_signin">Sign In Error</string>
+    <string name="sign_in_by_phone">Sign in by Phone</string>
+    <string name="phone_number">+7(9**)*******</string>
+    <string name="go_back">Go back</string>
+    <string name="write_code">Write code from sms</string>
+    <string name="code">Code</string>
+    <string name="empty_code">Empty Code</string>
 </resources>
