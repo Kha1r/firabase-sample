@@ -1,4 +1,4 @@
-package com.itis.android.firebasekhair.activity;
+package com.itis.android.firebasekhairrus.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.itis.android.firebasekhair.R;
+import com.itis.android.firebasekhairrus.R;
 
 import java.util.concurrent.TimeUnit;
 

@@ -12,7 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */package com.itis.android.firebasekhair.service;
+ */package com.itis.android.firebasekhairrus.service;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -27,8 +27,8 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.itis.android.firebasekhair.R;
-import com.itis.android.firebasekhair.activity.MainActivity;
+import com.itis.android.firebasekhairrus.R;
+import com.itis.android.firebasekhairrus.activity.MainActivity;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

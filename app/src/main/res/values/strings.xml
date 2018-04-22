@@ -31,4 +31,6 @@
     <string name="write_code">Write code from sms</string>
     <string name="code">Code</string>
     <string name="empty_code">Empty Code</string>
+    <string name="instructionl_to_reset_password">Write email to reset password</string>
+    <string name="check_email">Check email</string>
 </resources>

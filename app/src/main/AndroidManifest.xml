@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.itis.android.firebasesimple">
+    package="com.itis.android.firebasekhairrus">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,7 +18,7 @@
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_dashboard_pink_700_24dp" />
 
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.itis.android.firebasekhairrus.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,23 +31,23 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="firebasesimple.android.itis.com"
+                    android:host="firebasekhairrus.android.itis.com"
                     android:pathPrefix="/message"
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SignInActivity" />
-        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name="com.itis.android.firebasekhairrus.activity.SignInActivity" />
+        <activity android:name="com.itis.android.firebasekhairrus.activity.SignUpActivity" />
 
         <service
-            android:name=".service.MyFirebaseMessagingService"
+            android:name="com.itis.android.firebasekhairrus.service.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name=".service.MyFirebaseInstanceIdService"
+            android:name="com.itis.android.firebasekhairrus.service.MyFirebaseInstanceIdService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -58,7 +58,8 @@
             android:name="io.fabric.ApiKey"
             android:value="b1c12a468344b719d929ab7ff88a7f6d812a199e" />
 
-        <activity android:name=".activity.SignInWithPhoneActivity"></activity>
+        <activity android:name="com.itis.android.firebasekhairrus.activity.SignInWithPhoneActivity" />
+        <activity android:name="com.itis.android.firebasekhairrus.activity.ForgetPasswordActivity" />
     </application>
 
 </manifest>
