@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple.activity;
+package com.itis.android.firebasekhairrus.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,8 +15,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.itis.android.firebasesimple.R;
-import com.itis.android.firebasesimple.utils.SoftKeyboard;
+import com.itis.android.firebasekhairrus.R;
+import com.itis.android.firebasekhairrus.utils.SoftKeyboard;
 
 /**
  * Created by Nail Shaykhraziev on 02.04.2018.

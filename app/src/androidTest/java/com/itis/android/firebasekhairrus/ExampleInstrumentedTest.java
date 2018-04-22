@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple;
+package com.itis.android.firebasekhairrus;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

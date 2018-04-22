@@ -59,7 +59,7 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@color/colorAccent"
             android:text="@string/btn_login" />
 
@@ -68,8 +68,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_sign_in_with_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/sign_in_by_phone" />
 
         <Button
             android:id="@+id/btn_reset_password"

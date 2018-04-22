@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.itis.android.firebasesimple.activity;
+package com.itis.android.firebasekhairrus.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -67,9 +68,9 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.itis.android.firebasesimple.R;
-import com.itis.android.firebasesimple.model.Message;
-import com.itis.android.firebasesimple.utils.Preferences;
+import com.itis.android.firebasekhairrus.R;
+import com.itis.android.firebasekhairrus.model.Message;
+import com.itis.android.firebasekhairrus.utils.Preferences;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements
     public static final int DEFAULT_MSG_LENGTH_LIMIT = 10;
     public static final String ANONYMOUS = "anonymous";
     private static final String MESSAGE_SENT_EVENT = "message_sent";
-    private static final String MESSAGE_URL = "http://friendlychat.firebase.google.com/message/";
+    private static final String MESSAGE_URL = "http://FirebasePhoneAuth.firebase.google.com/message/";
     private static final String LOADING_IMAGE_URL = "https://www.google.com/images/spin-32.gif";
 
     private Button sendButton;
@@ -126,6 +127,11 @@ public class MainActivity extends AppCompatActivity implements
     private String username;
     private String photoUrl;
     private SharedPreferences sharedPreferences;
+
+    public static void start(Activity activity){
+        Intent intent = new Intent(activity,MainActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

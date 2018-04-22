@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple.activity;
+package com.itis.android.firebasekhairrus.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,8 +28,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.itis.android.firebasesimple.R;
-import com.itis.android.firebasesimple.utils.SoftKeyboard;
+import com.itis.android.firebasekhairrus.R;
+import com.itis.android.firebasekhairrus.utils.SoftKeyboard;
 
 public class SignInActivity extends AppCompatActivity
         implements GoogleApiClient.OnConnectionFailedListener {
@@ -40,7 +40,7 @@ public class SignInActivity extends AppCompatActivity
     private SignInButton googleSignInButton;
     private TextInputLayout tiEmail, tiPassword;
     private EditText etEmail, etPassword;
-    private Button btnSignIn, btnSignUp, btnResetPassword;
+    private Button btnSignIn, btnSignInWithPhone, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     private View container;
 
@@ -98,6 +98,7 @@ public class SignInActivity extends AppCompatActivity
                 startActivity(new Intent(this, SignUpActivity.class)));
 
         btnResetPassword.setOnClickListener(v -> {
+            ForgetPasswordActivity.start(SignInActivity.this);
         });
 
         btnSignIn.setOnClickListener(v -> {
@@ -138,11 +139,13 @@ public class SignInActivity extends AppCompatActivity
                         }
                     });
         });
+        btnSignInWithPhone.setOnClickListener(v -> SignInWithPhoneActivity.start(SignInActivity.this));
     }
 
     private void initFields() {
         container = findViewById(R.id.container);
         btnSignIn = findViewById(R.id.btn_login);
+        btnSignInWithPhone = findViewById(R.id.btn_sign_in_with_phone);
         btnSignUp = findViewById(R.id.btn_to_signup);
         tiEmail = findViewById(R.id.ti_email);
         tiPassword = findViewById(R.id.ti_password);
