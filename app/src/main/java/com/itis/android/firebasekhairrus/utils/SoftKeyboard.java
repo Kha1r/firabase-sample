@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple.utils;
+package com.itis.android.firebasekhair.utils;
 
 import android.content.Context;
 import android.view.View;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.itis.android.firebasesimple.utils;
+package com.itis.android.firebasekhair.utils;
 
 public class Preferences {
 

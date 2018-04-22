@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple.activity;
+package com.itis.android.firebasekhair.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.itis.android.firebasesimple.R;
+import com.itis.android.firebasekhair.R;
 
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +47,7 @@ public class SignInWithPhoneActivity extends AppCompatActivity {
 
     private void initFields() {
         etPhoneNumber = findViewById(R.id.et_phone_number);
-        btnSignIn = findViewById(R.id.sign_in_button);
+        btnSignIn = findViewById(R.id.btn_sign_up);
         btnGoBack = findViewById(R.id.btn_go_back);
     }
 

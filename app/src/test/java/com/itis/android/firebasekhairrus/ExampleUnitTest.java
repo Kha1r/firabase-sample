@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple;
+package com.itis.android.firebasekhair;
 
 import org.junit.Test;
 

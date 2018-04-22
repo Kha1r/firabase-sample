@@ -1,4 +1,4 @@
-package com.itis.android.firebasesimple.activity;
+package com.itis.android.firebasekhairrus.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -29,8 +28,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.itis.android.firebasesimple.R;
-import com.itis.android.firebasesimple.utils.SoftKeyboard;
+import com.itis.android.firebasekhairrus.R;
+import com.itis.android.firebasekhairrus.utils.SoftKeyboard;
 
 public class SignInActivity extends AppCompatActivity
         implements GoogleApiClient.OnConnectionFailedListener {
@@ -99,6 +98,7 @@ public class SignInActivity extends AppCompatActivity
                 startActivity(new Intent(this, SignUpActivity.class)));
 
         btnResetPassword.setOnClickListener(v -> {
+            ForgetPasswordActivity.start(SignInActivity.this);
         });
 
         btnSignIn.setOnClickListener(v -> {
